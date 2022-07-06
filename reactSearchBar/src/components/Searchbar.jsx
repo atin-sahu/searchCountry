@@ -11,7 +11,7 @@ export const Searchbar = () => {
     const [finalFilter, setFinalFilter] = useState([]);
 
     const getItem =async ()=>{
-        const data =await axios.get("http://localhost:8080/countries")
+        const data =await axios.get("https://country-population71.herokuapp.com/countries")
         .then((data)=>data.data);
         console.log(data);
         SetItem(data);
